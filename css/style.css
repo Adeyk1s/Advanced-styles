@@ -37,7 +37,7 @@
 .menu-btn {
   display: flex;
   align-items: center;  
-  position: fixed;
+  position: absolute;
   top: 24px;
   left: 24px;
   width: 40px;
@@ -210,8 +210,13 @@
     margin-bottom: 24px;
 }
 
+@media screen and (min-height: 768px){
+    .nav-popup{
+      height: 100%;
+    }
+}
 @media screen and (min-height: 1024px){
-    .main {
-        margin-bottom: 244px;
-      }
+  .main {
+      margin-bottom: 244px;
+    }
 }
